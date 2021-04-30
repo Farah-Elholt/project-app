@@ -1,3 +1,37 @@
+<style>
+  .column {
+  float: left;
+  width: 33.33%;
+  align-content: center;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: gray;
+  position: relative;
+  left: 35%;
+}
+
+.dm_row {
+  text-align: center;
+  position: relative;
+  padding: 5%;
+  background-color: lightgray;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title style="text-align: center;">
@@ -9,20 +43,33 @@
 <ion-content [fullscreen]="true">
   <div id="group_chat" style="align-content: center; text-align: center;">
     <div class="row">
-      <div class="column" style="background-color: aqua; width: 33.3%">
-        left group
+      <div class="column" style="width: 33.3%">
+        <div class="circle"></div>
+        profile picture
       </div>
-      <div class="column" style="background-color: brown; width: 33.3%;">
-        middle group
+      <div class="column" style="width: 33.3%;">
+        <div class="circle"></div>
+        profile picture
       </div>
-      <div class="column" style="background-color: aqua; width: 33.3%">
-        right group
+      <div class="column" style="width: 33.3%">
+        <div class="circle"></div>
+        profile picture
       </div>
     </div>
-
   </div>
   <div id="direct_message" style="align-content: center;">
-
+    <div class="dm_row">
+      New direct message
+    </div>
+    <div class="dm_row">
+      New direct message
+    </div>
+    <div class="dm_row">
+      New direct message
+    </div>
+    <div class="dm_row">
+      New direct message
+    </div>
   </div>
   <ion-header collapse="condense">
     <ion-toolbar>
