@@ -1,3 +1,20 @@
+<style>
+
+#save-button{
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+}
+
+#prof-Image{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+
+</style>
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title style="text-align: center;">
@@ -8,15 +25,80 @@
 
 <ion-content [fullscreen]="true">
   <div id = "profile_container" style="align-content: center; text-align: center;">
+    <div id = "profile-picture">
+      <img id = "prof-Image" src="\assets\images\profPic.jpg">
+    </div>
+    <br>
+    <br>
+
+    <div id="body-content">
+      <div id= "top-body">
+      <div id = "name-box">
+        <label for="fname">Your Name:</label>
+        <br>
+        <br>
+        <input style = "text-align:center;" type="text" id="fname" name="fname" value=""><br>
+      
+      </div>
+      <br>
+      <div id = "age-box">
+
+        <label for="age">Age:</label>
+        <br>
+        <br>
+        <input style = "text-align:center;" type="text" id="age" name="age" value=""><br>
+
+      </div>
+      <br>
+      <div id = "hobbies">
+        <label for="traits-hobbies">Traits and Hobbies:</label>
+        <br>
+        <br>
+        <input style = "text-align:left; width: 400px;" type="text" id="traits-hobbies1" name="traits-hobbies1" value="">
+        <br>
+        <br>
+        <input style = "text-align:left; width: 400px;" type="text" id="traits-hobbies2" name="traits-hobbies2" value="">
+        <br>
+        <br>
+        <input style = "text-align:left; width: 400px;" type="text" id="traits-hobbies3" name="traits-hobbies3" value="">
+        <br>
+        <br>
+        <input style = "text-align:left; width: 400px;" type="text" id="traits-hobbies4" name="traits-hobbies4" value="">
+        <br>
+        <br>
+        <input style = "text-align:left; width: 400px;" type="text" id="traits-hobbies5" name="traits-hobbies5" value="">
+        <br>
+        <br>  
+
+
+      </div>
+
+      
+
+
+    </div>
+
+
+    </div>
+
+
+
     <div id = "bio">
-      <img src="\assets\images\depositphotos_58821697-stock-photo-magic-man.jpg" alt="hello. i am the magic man" style="width: 15%;">
-      <h1>this is a header. i am a stock image magic man</h1>
-      <p>this is my bio. learn all about my magic spells</p>
-      photos
+
+      <div id = "bio-text">
+        <label for="traits-hobbies">Your Bio: </label>
+        <br>
+        <br>
+        <input style = "text-align:center; height: 200px; width: 500px;" type="text" id="bioInput" name="bioInput" value="">
+
+      </div>
+      
     </div>
-    <div id = "photos">
-      <img src="\assets\images\depositphotos_82284502-stock-photo-magician-hands-with-magic-wand.jpg" alt="maaaaagic" style="width: 15%;">
-    </div>
+    <br>
+    <br>
+
+    <button id = "save-button" type="button">Save Profile</button>
+    
   </div>
   <div id = "messages">
 
