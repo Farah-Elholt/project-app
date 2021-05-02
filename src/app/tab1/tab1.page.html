@@ -1,3 +1,44 @@
+<style>
+  .like_button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  }
+
+  .like_button:hover {background-color: #28612a;}
+  .like_button:active {
+    background-color: #6acf6d;
+    animation: line 2s linear forwards;
+    }
+
+  .report_button {
+  background-color: rgb(131, 21, 21); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  }
+
+  .report_button:hover {background-color: rgb(75, 11, 11);}
+  .report_button:active {background-color: rgb(175, 57, 57);}
+
+  @keyframes line {
+  from {
+    left:50%;
+    width:0%;
+  }
+  to {
+    left:5%;
+    width:90%;
+  }
+}
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title style="text-align: center;">
@@ -13,18 +54,27 @@
       <h1>according to all known laws of aviation</h1>
       <p>just like some filler text so we can have a header a caption and the post you know</p>
       <img src="\assets\images\15-155298_floating-man-interview-stock-hd-png-download.png" alt="stock image">
+      <br>
+      <button class="like_button" type="button">Like</button>
+      <button class="report_button" type="button">Report</button>
     </div>
 
     <div id = "post" style = "text-align: center;">
       <h1>according to all known laws of aviation</h1>
       <p>just like some filler text so we can have a header a caption and the post you know</p>
       <img src="\assets\images\15-155298_floating-man-interview-stock-hd-png-download.png" alt="stock image">
+      <br>
+      <button class="like_button" type="button">Like</button>
+      <button class="report_button" type="button">Report</button>
     </div>
 
     <div id = "post" style = "text-align: center;">
       <h1>according to all known laws of aviation</h1>
       <p>just like some filler text so we can have a header a caption and the post you know</p>
       <img src="\assets\images\15-155298_floating-man-interview-stock-hd-png-download.png" alt="stock image">
+      <br>
+      <button class="like_button" type="button">Like</button>
+      <button class="report_button" type="button">Report</button>
     </div>
   </div>
   <ion-header collapse="condense">
